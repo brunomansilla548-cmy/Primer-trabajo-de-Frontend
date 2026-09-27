@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+
+/* CABECERA */
+
+.cabecera {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.cabecera h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.cabecera p {
+    color: #666;
+}
+
+
+/* CONTENIDO */
+
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+
+/* SECCIONES */
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* MOVIMIENTOS */
+
+.movimientos ul {
+    list-style: none;
+}
+
+.movimientos li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* FORMULARIO */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+/* BOTÓN */
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+
+/* TOTAL */
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.total strong {
+    font-size: 20px;
+}
+
+
+/* HISTORIAL */
+
+.historial ul {
+    list-style: none;
+}
+
+.gasto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-gasto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.categoria {
+    font-size: 14px;
+    color: #777;
+}
+
+.eliminar {
+    width: auto;
+    padding: 7px 10px;
+    background-color: #777;
+}
+
+
+/* ADAPTACIÓN PARA CELULAR */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 92%;
+        margin-top: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .cabecera h1 {
+        font-size: 21px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+}

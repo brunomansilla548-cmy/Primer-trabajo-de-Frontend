@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de gastos</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="cabecera">
+        <h1>Calculadora de gastos</h1>
+        <p>Controlá tus gastos personales</p>
+    </header>
+
+
+    <main>
+
+        <!-- Últimos movimientos -->
+        <section class="movimientos">
+            <h2>Últimos movimientos</h2>
+
+            <ul id="listaMovimientos">
+                <li>
+                    <p>Supermercado</p>
+                    <p>$5000</p>
+                </li>
+
+                <li>
+                    <p>Combustible</p>
+                    <p>$8000</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Carga de gastos -->
+        <section class="carga-gastos">
+
+            <h2>Carga de gastos</h2>
+
+            <form id="formularioGasto">
+
+                <div class="campo">
+                    <label for="monto">Monto</label>
+                    <input
+                        type="number"
+                        id="monto"
+                        name="monto"
+                        placeholder="$0"
+                    >
+                </div>
+
+
+                <div class="campo">
+                    <label for="detalle">Detalle</label>
+                    <input
+                        type="text"
+                        id="detalle"
+                        name="detalle"
+                        placeholder="Ej: Supermercado"
+                    >
+                </div>
+
+
+                <div class="campo">
+                    <label for="categoria">Categoría</label>
+
+                    <select id="categoria" name="categoria">
+                        <option value="">Seleccionar</option>
+                        <option value="Alimentación">Alimentación</option>
+                        <option value="Transporte">Transporte</option>
+                        <option value="Entretenimiento">Entretenimiento</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </div>
+
+
+                <button type="submit">
+                    Agregar gasto
+                </button>
+
+            </form>
+
+
+            <div class="total">
+                <span>Carga total</span>
+                <strong id="totalGastos">$0</strong>
+            </div>
+
+        </section>
+
+
+        <!-- Historial -->
+        <section class="historial">
+
+            <h2>Historial de gastos</h2>
+
+            <ul id="listaGastos">
+                <!-- JavaScript agregará los gastos acá -->
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <script src= "app.js"></script>
+
+</body>
+
+</html>
